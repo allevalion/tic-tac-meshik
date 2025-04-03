@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-Мэшики</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="controls">
+            <div class="controls-content">
+                <h1>Крестики-Мэшики</h1>
+                <p>Попробуй победить в Крестики-нолики самого Мэшика!<br>
+                    Спорим, у тебя не получится?
+                </p>
+            </div>
+            <img src="img/meshik.png" id="controlsImg"/>
+        </div>
+
+        <div class="game-wrapper">
+            <div class="game-container">
+                <table>
+                    <tr>
+                        <td class="cell" id="0"></td>
+                        <td class="cell" id="1"></td>
+                        <td class="cell" id="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="3"></td>
+                        <td class="cell" id="4"></td>
+                        <td class="cell" id="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="6"></td>
+                        <td class="cell" id="7"></td>
+                        <td class="cell" id="8"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="telegram-promo">
+                <button class="close-promo" onclick="closeTelegramPromo()">×</button>
+                <img src="img/telegram.png" alt="Telegram">
+                <h2>Присоединяйся!</h2>
+                <p>Подпишись на наш Telegram-канал, чтобы первым узнавать все новости
+                    про игры и обновления!
+                </p>
+                <button onclick="window.open('https://t.me/meshikgames', '_blank')">Подписаться</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="endgame">
+        <div class="text"></div>
+        <button onClick="startGame()">Играть снова</button>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            &copy 2025 alleva. Все права защищены.
+            <a href="https://github.com/allevalion/tic-tac-meshik" target="_blank" style="color: #1e90ff;">GitHub</a> |
+            <a href="https://t.me/meshikgames" target="_blank" style="color: #1e90ff;">Telegram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
